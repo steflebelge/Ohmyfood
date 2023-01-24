@@ -1,0 +1,48 @@
+/* line 1, ../projet3/Ohmyfood/sass/base/_base.scss */
+html {
+  font-family: Roboto, serif;
+}
+
+/* line 6, ../projet3/Ohmyfood/sass/base/_base.scss */
+h1, h2 {
+  font-family: Shrikhand, serif;
+}
+
+/* line 1, ../projet3/Ohmyfood/sass/components/_composants.scss */
+i {
+  margin: 0 15px;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+html {
+  background-color: black;
+}
+
+/* line 4, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+html body {
+  max-width: 768px;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+html body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 16, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+html body footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px;
+  background-color: grey;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

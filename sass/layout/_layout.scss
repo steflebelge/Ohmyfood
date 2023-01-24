@@ -1,0 +1,29 @@
+html{
+  @extend %fontTextes;
+  background-color: black;
+  body {
+    max-width: 768px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    color: black;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 15px;
+      background-color: grey;
+      color: white;
+    }
+  }
+}
+
+h1, h2{
+    @extend %fontTitres;
+}

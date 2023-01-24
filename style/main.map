@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/utils/_var.scss",
+		"../sass/base/_base.scss",
+		"../sass/components/_composants.scss",
+		"../sass/layout/_layout.scss"
+	],
+	"sourcesContent": [
+		"//utils\r\n  //var\r\n@import \"utils/var\";\r\n  //functions\r\n  //mixins\r\n  //placeholder\r\n\r\n//vendor\r\n\r\n//base\r\n@import \"base/base\";\r\n\r\n//composants\r\n@import \"components/composants\";\r\n\r\n//layout\r\n@import \"layout/layout\";\r\n\r\n//pages\r\n\r\n//themes",
+		"\r\n//declarations des variables de couleurs\r\n$colorPrimaire: #9356DC;\r\n$colorSecondaire: #FF79DA;\r\n$colorTertiaire: #99E2D0;\r\n\r\n",
+		"%fontTextes {\r\n  font-family: Roboto, serif;\r\n}\r\n\r\n\r\n%fontTitres {\r\n  font-family: Shrikhand, serif;\r\n}\r\n",
+		"i{\r\n  margin: 0 15px;\r\n  width: 16px;\r\n  height: 16px;\r\n}",
+		"html{\r\n  @extend %fontTextes;\r\n  background-color: black;\r\n  body {\r\n    max-width: 768px;\r\n    text-align: center;\r\n    margin: auto;\r\n    background-color: white;\r\n    color: black;\r\n\r\n    a{\r\n      text-decoration: none;\r\n      color: inherit;\r\n    }\r\n\r\n    footer{\r\n      display: flex;\r\n      flex-direction: column;\r\n      text-align: left;\r\n      padding: 15px;\r\n      background-color: grey;\r\n      color: white;\r\n    }\r\n  }\r\n}\r\n\r\nh1, h2{\r\n    @extend %fontTitres;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AIAA,AFAA,IEAI,CFAQ;EACV,WAAW,EAAE,aAAa;CAC3B;;;AEwBD,AFrBA,EEqBE,EAAE,EAAE,CFrBM;EACV,WAAW,EAAE,gBAAgB;CAC9B;;;ACPD,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;;ACJD,AAAA,IAAI,CAAA;EAEF,gBAAgB,EAAE,KAAK;CAsBxB;;;AAxBD,AAGE,IAHE,CAGF,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;CAeb;;;AAvBH,AAUI,IAVA,CAGF,IAAI,CAOF,CAAC,CAAA;EACC,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CACf;;;AAbL,AAeI,IAfA,CAGF,IAAI,CAYF,MAAM,CAAA;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,KAAK;CACb"
+}
