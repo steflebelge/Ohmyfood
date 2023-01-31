@@ -3,9 +3,21 @@ html {
   font-family: Roboto, serif;
 }
 
-/* line 6, ../projet3/Ohmyfood/sass/base/_base.scss */
-h1, h2 {
+/* line 5, ../projet3/Ohmyfood/sass/base/_base.scss */
+h1, section#menu h2 {
   font-family: Shrikhand, serif;
+}
+
+/* line 9, ../projet3/Ohmyfood/sass/base/_base.scss */
+section#menu div#entrees div.selectionPlat p span.tarif,
+section#menu div#plats div.selectionPlat p span.tarif,
+section#menu div#desserts div.selectionPlat p span.tarif, main#accueil section#fonctionnement a.etape p {
+  font-weight: 700;
+}
+
+/* line 13, ../projet3/Ohmyfood/sass/base/_base.scss */
+h2 {
+  font-weight: 900;
 }
 
 /* line 1, ../projet3/Ohmyfood/sass/components/_composants.scss */
@@ -13,36 +25,349 @@ i {
   margin: 0 15px;
   width: 16px;
   height: 16px;
+  color: #707070;
 }
 
-/* line 1, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 2, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+h1 {
+  margin: 0;
+}
+
+/* line 11, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+button.bigButton {
+  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+  border-radius: 100px;
+  border: none;
+  padding: 18px 0px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+/* line 18, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+button.bigButton a {
+  font-weight: bold;
+  padding: 18px;
+  font-size: 15px;
+  border-radius: 100px;
+  color: white;
+}
+
+/* line 27, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 html {
   background-color: black;
 }
 
-/* line 4, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-html body {
-  max-width: 768px;
+/* line 32, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+body {
   text-align: center;
   margin: auto;
   background-color: white;
   color: black;
+  font-size: 20px;
 }
 
-/* line 11, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-html body a {
+/* line 40, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+body a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 16, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-html body footer {
+/* line 46, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* line 52, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+header a {
+  position: absolute;
+  left: 5px;
+}
+
+/* line 56, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+header a i {
+  font-size: 1.3em;
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
+/* line 65, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+main.menu {
+  background-color: #f7f7f7;
+}
+
+/* line 70, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#top img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 77, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu {
+  border-radius: 40px;
+  margin-top: -40px;
+  background-color: #f7f7f7;
+  text-align: left;
+  padding: 15px;
+  position: relative;
+}
+
+/* line 85, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu h2 {
+  margin-bottom: -20px;
+}
+
+/* line 90, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu i.fa-heart {
+  position: absolute;
+  right: 40px;
+  top: 45px;
+  margin: 0;
+  font-size: x-large;
+}
+
+/* line 98, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees,
+section#menu div#plats,
+section#menu div#desserts {
+  margin-top: 50px;
+}
+
+/* line 103, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees h3,
+section#menu div#plats h3,
+section#menu div#desserts h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 107, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees h3 span.souligner,
+section#menu div#plats h3 span.souligner,
+section#menu div#desserts h3 span.souligner {
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 4px;
+}
+
+/* line 113, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat,
+section#menu div#plats div.selectionPlat,
+section#menu div#desserts div.selectionPlat {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6, 0 -5px 5px #E6E6E6;
+  margin-bottom: 15px;
+}
+
+/* line 120, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat h4,
+section#menu div#plats div.selectionPlat h4,
+section#menu div#desserts div.selectionPlat h4 {
+  margin: 7px 0;
+}
+
+/* line 123, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat p,
+section#menu div#plats div.selectionPlat p,
+section#menu div#desserts div.selectionPlat p {
+  margin: 0;
+  color: #707070;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 129, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat p span.tarif,
+section#menu div#plats div.selectionPlat p span.tarif,
+section#menu div#desserts div.selectionPlat p span.tarif {
+  float: right;
+}
+
+/* line 137, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu button.bigButton {
+  display: block;
+  margin: 45px auto;
+}
+
+/* line 140, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu button.bigButton a {
+  padding: 18px 45px;
+}
+
+/* line 146, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+footer {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 15px;
-  background-color: grey;
+  background-color: #282828;
   color: white;
+}
+
+/* line 154, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+footer img {
+  width: 130px;
+  padding: 25px 25px 25px 0;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/* line 159, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+footer a {
+  margin-bottom: 15px;
+  color: #aeaeae;
+}
+
+/* line 163, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+footer a i {
+  margin-left: 0;
+  color: white;
+  font-size: initial;
+}
+
+/* line 2, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#localisation {
+  color: #3d3d3d;
+  background-color: #eaeaea;
+  padding: 5px;
+  font-weight: bold;
+  box-shadow: 0 5px 5px #D0D0D0 inset;
+}
+
+/* line 10, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#reservation {
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+
+/* line 14, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#reservation h2 {
+  margin: 10px 0;
+}
+
+/* line 18, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#reservation p {
+  color: #707070;
+}
+
+/* line 23, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#fonctionnement {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* line 27, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#fonctionnement h2 {
+  text-align: left;
+}
+
+/* line 31, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#fonctionnement a.etape {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  float: right;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+  margin-bottom: 30px;
+  padding: 8px 0;
+  gap: 10px;
+}
+
+/* line 43, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#fonctionnement a.etape span {
+  position: relative;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 24px;
+  font-size: 15px;
+  height: 20px;
+  padding-top: 4px;
+  color: white;
+  font-weight: 400;
+  margin-right: -10px;
+}
+
+/* line 57, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#fonctionnement a.etape i {
+  height: 20px;
+}
+
+/* line 67, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* line 71, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants h2 {
+  text-align: left;
+}
+
+/* line 75, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card {
+  background-color: white;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+  margin-bottom: 25px;
+  overflow: hidden;
+  max-height: 260px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* line 86, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card figure {
+  margin: 0;
+}
+
+/* line 89, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card figure img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 180px;
+  margin-bottom: 10px;
+}
+
+/* line 96, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card figure figcaption {
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/* line 103, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card p {
+  margin: 5px 10px;
+  text-align: left;
+}
+
+/* line 108, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card i {
+  position: absolute;
+  right: 25px;
+  bottom: 40px;
+  margin: 0;
+  font-size: x-large;
+}
+
+/* line 116, ../projet3/Ohmyfood/sass/pages/_accueil.scss */
+main#accueil section#restaurants a.card span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #32b091;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

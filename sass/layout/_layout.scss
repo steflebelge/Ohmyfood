@@ -1,29 +1,175 @@
-html{
+
+h1{
+  @extend %fontTitres;
+  margin: 0;
+}
+
+h2{
+  @extend %fontBolder;
+}
+
+button.bigButton{
+  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+  border-radius: 100px;
+  border: none;
+  padding: 18px 0px;
+  background-image: linear-gradient($colorSecondaire, $colorPrimaire);
+
+  a{
+    font-weight: bold;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 100px;
+    color: white;
+  }
+}
+
+html {
   @extend %fontTextes;
   background-color: black;
-  body {
-    max-width: 768px;
-    text-align: center;
-    margin: auto;
-    background-color: white;
-    color: black;
+}
 
-    a{
-      text-decoration: none;
-      color: inherit;
-    }
+body {
+  //max-width: 768px;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  color: black;
+  font-size: 20px;
 
-    footer{
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      padding: 15px;
-      background-color: grey;
-      color: white;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  a {
+    position: absolute;
+    left: 5px;
+
+    i {
+      font-size: 1.3em;
+      width: 25px;
+      height: 25px;
+      color: black;
     }
   }
 }
 
-h1, h2{
-    @extend %fontTitres;
+main.menu{
+  background-color: #f7f7f7;
 }
+
+section#top{
+  img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+section#menu{
+  border-radius: 40px;
+  margin-top: -40px;
+  background-color: rgb(247,247,247);
+  text-align: left;
+  padding: 15px;
+  position: relative;
+
+  h2{
+    @extend %fontTitres;
+    margin-bottom: -20px;
+  }
+
+  i.fa-heart{
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    margin: 0;
+    font-size: x-large;
+  }
+
+  div#entrees,
+  div#plats,
+  div#desserts{
+    margin-top: 50px;
+
+    h3{
+      font-weight: 400;
+      text-transform: uppercase;
+
+      span.souligner{
+        border-bottom: 4px solid $colorTertiaire;
+        padding-bottom: 4px;
+      }
+    }
+
+    div.selectionPlat{
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px;
+      box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6, 0 -5px 5px #E6E6E6;
+      margin-bottom: 15px;
+
+      h4{
+        margin: 7px 0;
+      }
+      p{
+        margin: 0;
+        color: $colorTextGreyTwo;
+        display: flex;
+        justify-content: space-between;
+
+        span.tarif{
+          @extend %fontBold;
+          float: right;
+        }
+      }
+    }
+  }
+
+  button.bigButton{
+    display: block;
+    margin: 45px auto;
+    a{
+      padding: 18px 45px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px;
+  background-color: #282828;
+  color: white;
+
+  img{
+    width: 130px;
+    padding: 25px 25px 25px 0;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  }
+  a {
+    margin-bottom: 15px;
+    color: $colorTextGreyThree;
+
+    i {
+      margin-left: 0;
+      color: white;
+      font-size: initial;
+    }
+  }
+}
+
+//@media screen and (min-width: 768px) {
+//  body{
+//    background-color: red;
+//  }
+//}

@@ -1,0 +1,129 @@
+main#accueil{
+  section#localisation{
+    color: $colorTextGreyOne;
+    background-color: rgb(234,234,234);
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 0 5px 5px #D0D0D0 inset;
+  }
+
+  section#reservation{
+    background-color: $backgroundGrey;
+    padding: 30px;
+
+    h2{
+      margin: 10px 0;
+    }
+
+    p{
+      color: $colorTextGreyTwo;
+    }
+  }
+
+  section#fonctionnement{
+    display: inline-block;
+    padding: 20px;
+
+    h2{
+      text-align: left;
+    }
+
+    a.etape{
+      display: flex;
+      align-items: center;
+      width: 95%;
+      float: right;
+      background-color: rgb(247,247,247);
+      border-radius: 20px;
+      box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+      margin-bottom: 30px;
+      padding: 8px 0;
+      gap: 10px;
+
+      span{
+        position: relative;
+        left: -10px;
+        border-radius: 50%;
+        background-color: $colorPrimaire;
+        width: 24px;
+        font-size: 15px;
+        height: 20px;
+        padding-top: 4px;
+        color: white;
+        font-weight: 400;
+        margin-right: -10px;
+      }
+
+      i{
+        height: 20px;
+      }
+
+      p{
+        @extend %fontBold;
+      }
+    }
+  }
+
+  section#restaurants{
+    background-color: $backgroundGrey;
+    padding: 20px;
+
+    h2{
+      text-align: left;
+    }
+
+    a.card{
+      background-color: white;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+      margin-bottom: 25px;
+      overflow: hidden;
+      max-height: 260px;
+      position: relative;
+      padding-bottom: 10px;
+
+      figure{
+        margin: 0;
+
+        img{
+          width: 100%;
+          object-fit: cover;
+          max-height: 180px;
+          margin-bottom: 10px;
+        }
+
+        figcaption{
+          text-align: left;
+          margin-left: 10px;
+          font-weight: 700;
+        }
+      }
+
+      p{
+        margin: 5px 10px;
+        text-align: left;
+      }
+
+      i{
+        position: absolute;
+        right: 25px;
+        bottom: 40px;
+        margin: 0;
+        font-size: x-large;
+      }
+
+      span{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $colorTertiaire;
+        color: darken($colorTertiaire, 30%);
+        padding: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 2px;
+      }
+    }
+  }
+}
