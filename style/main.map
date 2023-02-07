@@ -8,10 +8,10 @@
 		"../sass/components/_composants.scss",
 		"../sass/layout/_layout.scss",
 		"../sass/pages/_accueil.scss",
-		"../sass/theme/_responsiveTablette.scss"
+		"../sass/theme/_responsive.scss"
 	],
 	"sourcesContent": [
-		"//utils\r\n  //var\r\n@import \"utils/var\";\r\n  //functions\r\n  //mixins\r\n  //placeholder\r\n\r\n//vendor\r\n\r\n//base\r\n@import \"base/base\";\r\n\r\n//composants\r\n@import \"components/composants\";\r\n\r\n//layout\r\n@import \"layout/layout\";\r\n\r\n//pages\r\n@import \"pages/accueil\";\r\n\r\n//themes\r\n@import \"theme/responsiveTablette\";",
+		"//utils\r\n  //var\r\n@import \"utils/var\";\r\n  //functions\r\n  //mixins\r\n  //placeholder\r\n\r\n//vendor\r\n\r\n//base\r\n@import \"base/base\";\r\n\r\n//composants\r\n@import \"components/composants\";\r\n\r\n//layout\r\n@import \"layout/layout\";\r\n\r\n//pages\r\n@import \"pages/accueil\";\r\n\r\n//themes\r\n@import \"theme/responsive\";",
 		"\r\n//declarations des variables de couleurs\r\n$colorPrimaire: #9356DC;\r\n$colorSecondaire: #FF79DA;\r\n$colorTertiaire: #99E2D0;\r\n\r\n$colorTextGreyOne: rgb(61,61,61);\r\n$colorTextGreyTwo: rgb(112,112,112);\r\n$colorTextGreyThree: rgb(174,174,174);\r\n\r\n$backgroundGrey: rgb(247,247,247);",
 		"%fontTextes {\r\n  font-family: Roboto, serif;\r\n}\r\n\r\n%fontTitres {\r\n  font-family: Shrikhand, serif;\r\n}\r\n\r\n%fontBold{\r\n  font-weight: 700;\r\n}\r\n\r\n%fontBolder{\r\n  font-weight: 900;\r\n}",
 		"i{\r\n  margin: 0 15px;\r\n  width: 16px;\r\n  height: 16px;\r\n  color: $colorTextGreyTwo;\r\n}",
