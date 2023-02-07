@@ -1,27 +1,23 @@
 
-h1{
+h1 {
   @extend %fontTitres;
   margin: 0;
 }
 
-h2{
+h2 {
   @extend %fontBolder;
 }
 
-button.bigButton{
+a.bigButton {
+  padding: 18px;
+  font-size: 15px;
+  color: white;
   box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
   border-radius: 100px;
-  border: none;
-  padding: 18px 0px;
+  margin: 20px auto;
+  display: block;
+  width: max-content;
   background-image: linear-gradient($colorSecondaire, $colorPrimaire);
-
-  a{
-    font-weight: bold;
-    padding: 18px;
-    font-size: 15px;
-    border-radius: 100px;
-    color: white;
-  }
 }
 
 html {
@@ -43,7 +39,7 @@ body {
   }
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,32 +58,32 @@ header{
   }
 }
 
-main.menu{
+main.menu {
   background-color: #f7f7f7;
 }
 
-section#top{
-  img{
+section#top {
+  img {
     height: 250px;
     width: 100%;
     object-fit: cover;
   }
 }
 
-section#menu{
+section#menu {
   border-radius: 40px;
   margin-top: -40px;
-  background-color: rgb(247,247,247);
+  background-color: rgb(247, 247, 247);
   text-align: left;
   padding: 15px;
   position: relative;
 
-  h2{
+  h2 {
     @extend %fontTitres;
     margin-bottom: -20px;
   }
 
-  i.fa-heart{
+  i.fa-heart {
     position: absolute;
     right: 40px;
     top: 45px;
@@ -97,49 +93,79 @@ section#menu{
 
   div#entrees,
   div#plats,
-  div#desserts{
+  div#desserts {
     margin-top: 50px;
 
-    h3{
+    h3 {
       font-weight: 400;
       text-transform: uppercase;
 
-      span.souligner{
+      span.souligner {
         border-bottom: 4px solid $colorTertiaire;
         padding-bottom: 4px;
       }
     }
 
-    div.selectionPlat{
+    div.selectionPlat {
       background-color: white;
       border-radius: 20px;
       padding: 10px;
       box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6, 0 -5px 5px #E6E6E6;
       margin-bottom: 15px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
 
-      h4{
-        margin: 7px 0;
-      }
-      p{
-        margin: 0;
-        color: $colorTextGreyTwo;
+      span.infosPlat {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
 
-        span.tarif{
-          @extend %fontBold;
-          float: right;
+        h4,
+        p > span:first-child{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
+
+        h4 {
+          margin: 7px 0;
+          width: 85%;
+        }
+
+        p {
+          margin: 0;
+          color: $colorTextGreyTwo;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          span.tarif {
+            @extend %fontBold;
+            color: $colorTextGreyOne;
+            margin-left: 10px;
+            width: max-content;
+          }
+        }
+      }
+
+      span.animation{
+        width: 0;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background-color: red;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
     }
   }
 
-  button.bigButton{
-    display: block;
+  a.bigButton {
+    padding: 18px 45px;
     margin: 45px auto;
-    a{
-      padding: 18px 45px;
-    }
   }
 }
 
@@ -151,11 +177,12 @@ footer {
   background-color: #282828;
   color: white;
 
-  img{
+  img {
     width: 130px;
     padding: 25px 25px 25px 0;
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
+
   a {
     margin-bottom: 15px;
     color: $colorTextGreyThree;
