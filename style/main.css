@@ -403,4 +403,83 @@ main#accueil section#restaurants a.card span {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  /* line 5, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main#accueil section#fonctionnement,
+  main#accueil section#restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+  /* line 12, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main#accueil section#fonctionnement h2,
+  main#accueil section#restaurants h2 {
+    width: 100%;
+  }
+  /* line 16, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main#accueil section#fonctionnement a.card,
+  main#accueil section#fonctionnement a.etape,
+  main#accueil section#restaurants a.card,
+  main#accueil section#restaurants a.etape {
+    width: 45%;
+    max-width: 350px;
+  }
+  /* line 27, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#top img {
+    height: 35vh;
+  }
+  /* line 31, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+  /* line 37, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#menu h2 {
+    width: 100%;
+  }
+  /* line 41, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#menu div#entrees,
+  main.menu section#menu div#plats,
+  main.menu section#menu div#desserts {
+    width: 45%;
+    max-width: 400px;
+    min-width: 350px;
+    margin-top: -3px;
+  }
+  /* line 50, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#menu a.bigButton {
+    width: 150px;
+    margin: 15px 100%;
+  }
+  /* line 57, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  footer {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+  /* line 64, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  footer a {
+    width: 45%;
+    text-align: center;
+  }
+  /* line 69, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  footer img {
+    width: 150px;
+    margin: 15px 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1289px) {
+  /* line 79, ../projet3/Ohmyfood/sass/theme/_responsiveTablette.scss */
+  main.menu section#menu div#desserts {
+    width: 70%;
+    max-width: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
