@@ -1,46 +1,47 @@
-main#accueil{
-  div#localisation{
+
+main#accueil {
+  div#localisation {
     color: $colorTextGreyOne;
-    background-color: rgb(234,234,234);
+    background-color: rgb(234, 234, 234);
     padding: 5px;
     font-weight: bold;
     box-shadow: 0 5px 5px #D0D0D0 inset;
   }
 
-  section#reservation{
+  section#reservation {
     background-color: $backgroundGrey;
     padding: 30px;
 
-    h2{
+    h2 {
       margin: 10px 0;
     }
 
-    p{
+    p {
       color: $colorTextGreyTwo;
     }
   }
 
-  section#fonctionnement{
+  section#fonctionnement {
     display: inline-block;
     padding: 20px;
 
-    h2{
+    h2 {
       text-align: left;
     }
 
-    a.etape{
+    a.etape {
       display: flex;
       align-items: center;
       width: 95%;
       float: right;
-      background-color: rgb(247,247,247);
+      background-color: rgb(247, 247, 247);
       border-radius: 20px;
-      box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+      box-shadow: $boxShadow;
       margin-bottom: 30px;
       padding: 8px 0;
       gap: 10px;
 
-      span{
+      span {
         position: relative;
         left: -10px;
         border-radius: 50%;
@@ -54,58 +55,67 @@ main#accueil{
         margin-right: -10px;
       }
 
-      i{
+      i {
         height: 20px;
       }
 
-      p{
+      p {
         @extend %fontBold;
+      }
+
+      &:hover {
+        background-color: rgb(245, 237, 255);
+        box-shadow: $boxShadowHover;
+
+        i {
+          color: $colorPrimaire;
+        }
       }
     }
   }
 
-  section#restaurants{
+  section#restaurants {
     background-color: $backgroundGrey;
     padding: 20px;
 
-    h2{
+    h2 {
       text-align: left;
     }
 
-    a.card{
+    a.card {
       background-color: white;
       display: block;
       border-radius: 15px;
-      box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+      box-shadow: $boxShadow;
       margin-bottom: 25px;
       overflow: hidden;
       max-height: 260px;
       position: relative;
       padding-bottom: 10px;
 
-      figure{
+      figure {
         margin: 0;
 
-        img{
+        img {
           width: 100%;
           object-fit: cover;
           max-height: 180px;
           margin-bottom: 10px;
         }
 
-        figcaption{
+        figcaption {
           text-align: left;
           margin-left: 10px;
           font-weight: 700;
         }
       }
 
-      p{
+      p {
         margin: 5px 10px;
         text-align: left;
       }
 
-      i{
+      i {
         position: absolute;
         right: 25px;
         bottom: 40px;
@@ -113,7 +123,7 @@ main#accueil{
         font-size: x-large;
       }
 
-      span{
+      span {
         position: absolute;
         top: 15px;
         right: 15px;
@@ -123,6 +133,10 @@ main#accueil{
         font-size: 16px;
         font-weight: bold;
         border-radius: 2px;
+      }
+
+      &:hover {
+        box-shadow: $boxShadowHover;
       }
     }
   }

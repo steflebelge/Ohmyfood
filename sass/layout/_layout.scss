@@ -12,21 +12,30 @@ a.bigButton {
   padding: 18px;
   font-size: 15px;
   color: white;
-  box-shadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+  box-shadow: $boxShadow;
   border-radius: 100px;
   margin: 20px auto;
   display: block;
   width: max-content;
-  background-image: linear-gradient($colorSecondaire, $colorPrimaire);
+  background-image: $linearGradient;
+
+  &:hover{
+    box-shadow: $boxShadowHover;
+    background-image: $linearGradientHover;
+  }
 }
 
 html {
   @extend %fontTextes;
   background-color: black;
+
+  *{
+    transition-duration: 300ms;
+    transition-property: all;
+  }
 }
 
 body {
-  //max-width: 768px;
   text-align: center;
   margin: auto;
   background-color: white;
@@ -85,8 +94,8 @@ section#menu {
 
   i.fa-heart {
     position: absolute;
-    right: 40px;
-    top: 45px;
+    right: 30px;
+    top: 50px;
     margin: 0;
     font-size: x-large;
   }
@@ -107,6 +116,13 @@ section#menu {
     }
 
     div.selectionPlat {
+      animation-timing-function: linear; /* how the animation will behave */
+      animation-name: loadingPlats;
+      animation-duration: 300ms;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      top: 50px;
+
       background-color: white;
       border-radius: 20px;
       padding: 10px;
@@ -138,7 +154,7 @@ section#menu {
           margin: 0;
           color: $colorTextGreyTwo;
           display: flex;
-          width: 100%;
+          width: 95%;
           justify-content: space-between;
 
           span.tarif {
@@ -156,9 +172,35 @@ section#menu {
         right: 0;
         height: 100%;
         top: 0;
-        background-color: red;
+        background-color: $colorTertiaire;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+
+        i{
+          color: white;
+          transform: rotate(-360deg);
+        }
+      }
+
+      &:hover{
+        span.infosPlat{
+          width: 80%;
+        }
+        span.animation{
+          width: 20%;
+
+          i{
+            transform: rotate(0deg);
+          }
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
       }
     }
   }

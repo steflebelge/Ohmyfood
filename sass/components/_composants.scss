@@ -1,6 +1,106 @@
-i{
+i {
   margin: 0 15px;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   color: $colorTextGreyTwo;
+
+  &.fa-heart.fa-solid {
+    background: -webkit-linear-gradient($colorPrimaire, $colorSecondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position-y: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    z-index: 2;
+
+    &:hover {
+      background-position-y: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+
+//animation chargment de la page
+div.loader {
+  animation-delay: 1.5s;
+  animation-timing-function: linear; /* how the animation will behave */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: loadingPage;
+  animation-fill-mode: forwards;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    border: 16px solid white;
+    border-radius: 50%;
+    border-top: 16px solid $colorPrimaire;
+    border-right: 16px solid $colorSecondaire;
+    border-bottom: 16px solid $colorTertiaire;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes loadingPage {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//Fin animation chargement
+
+
+//animation apparition plats
+main.menu {
+  @for $i from 1 through 10 {
+    div.selectionPlat:nth-child(#{$i}n) {
+      animation-delay: #{$i * 0.3}s;
+    }
+  }
+}
+
+
+@keyframes loadingPlats {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }

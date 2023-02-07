@@ -9,3 +9,9 @@ $colorTextGreyTwo: rgb(112,112,112);
 $colorTextGreyThree: rgb(174,174,174);
 
 $backgroundGrey: rgb(247,247,247);
+
+$linearGradient: linear-gradient($colorSecondaire, $colorPrimaire);
+$linearGradientHover: linear-gradient(lighten($colorSecondaire, 5), lighten($colorPrimaire, 5));
+
+$boxShadow: 5px 10px 5px #E6E6E6, -5px 10px 5px #E6E6E6;
+$boxShadowHover: 5px 15px 5px #E6E6E6, -5px 15px 5px #E6E6E6;
