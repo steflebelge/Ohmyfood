@@ -23,16 +23,16 @@ i {
 
 //animation chargment de la page
 div.loader {
-  animation-delay: 1.5s;
+  animation-delay: 2.37s;
   animation-timing-function: linear; /* how the animation will behave */
   animation-iteration-count: 1; /* how many times the animation will play */
   animation-name: loadingPage;
   animation-fill-mode: forwards;
 
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  opacity: 1;
+  opacity: 0.8;
   z-index: 1;
   background-color: white;
   display: flex;
@@ -54,7 +54,7 @@ div.loader {
 
 @keyframes loadingPage {
   0% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -84,10 +84,12 @@ div.loader {
 
 
 //animation apparition plats
-main.menu {
+section#menu {
   @for $i from 1 through 10 {
-    div.selectionPlat:nth-child(#{$i}n) {
-      animation-delay: #{$i * 0.3}s;
+    div.selectionPlat:nth-child(#{$i}) {
+      & {
+        animation-delay: #{$i * 0.3}s;
+      }
     }
   }
 }

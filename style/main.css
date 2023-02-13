@@ -47,17 +47,17 @@ i.fa-heart.fa-solid:hover {
 
 /* line 25, ../projet3/Ohmyfood/sass/components/_composants.scss */
 div.loader {
-  animation-delay: 1.5s;
+  animation-delay: 2.37s;
   animation-timing-function: linear;
   /* how the animation will behave */
   animation-iteration-count: 1;
   /* how many times the animation will play */
   animation-name: loadingPage;
   animation-fill-mode: forwards;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  opacity: 1;
+  opacity: 0.8;
   z-index: 1;
   background-color: white;
   display: flex;
@@ -80,7 +80,7 @@ div.loader .content {
 
 @keyframes loadingPage {
   0% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -106,53 +106,53 @@ div.loader .content {
   }
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(1n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(1) {
   animation-delay: 0.3s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(2n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(2) {
   animation-delay: 0.6s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(3n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(3) {
   animation-delay: 0.9s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(4n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(4) {
   animation-delay: 1.2s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(5n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(5) {
   animation-delay: 1.5s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(6n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(6) {
   animation-delay: 1.8s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(7n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(7) {
   animation-delay: 2.1s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(8n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(8) {
   animation-delay: 2.4s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(9n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(9) {
   animation-delay: 2.7s;
 }
 
-/* line 89, ../projet3/Ohmyfood/sass/components/_composants.scss */
-main.menu div.selectionPlat:nth-child(10n) {
+/* line 90, ../projet3/Ohmyfood/sass/components/_composants.scss */
+section#menu div.selectionPlat:nth-child(10) {
   animation-delay: 3s;
 }
 
