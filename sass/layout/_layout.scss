@@ -71,7 +71,7 @@ main.menu {
   background-color: #f7f7f7;
 }
 
-section#top {
+div#top {
   img {
     height: 250px;
     width: 100%;
@@ -138,19 +138,20 @@ section#menu {
         justify-content: space-between;
         width: 100%;
 
-        h4,
+        p.titrePlat,
         p > span:first-child{
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
         }
 
-        h4 {
+        p.titrePlat {
           margin: 7px 0;
           width: 85%;
+          font-weight: bold;
         }
 
-        p {
+        p:not(.titrePlat) {
           margin: 0;
           color: $colorTextGreyTwo;
           display: flex;

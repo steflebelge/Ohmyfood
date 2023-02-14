@@ -9,9 +9,9 @@ h1, section#menu h2 {
 }
 
 /* line 9, ../projet3/Ohmyfood/sass/base/_base.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p span.tarif,
-section#menu div#plats div.selectionPlat span.infosPlat p span.tarif,
-section#menu div#desserts div.selectionPlat span.infosPlat p span.tarif, main#accueil section#fonctionnement a.etape p {
+section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif, main#accueil section#fonctionnement a.etape p {
   font-weight: 700;
 }
 
@@ -245,7 +245,7 @@ main.menu {
 }
 
 /* line 75, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#top img {
+div#top img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -330,11 +330,11 @@ section#menu div#desserts div.selectionPlat span.infosPlat {
 }
 
 /* line 141, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat h4,
+section#menu div#entrees div.selectionPlat span.infosPlat p.titrePlat,
 section#menu div#entrees div.selectionPlat span.infosPlat p > span:first-child,
-section#menu div#plats div.selectionPlat span.infosPlat h4,
+section#menu div#plats div.selectionPlat span.infosPlat p.titrePlat,
 section#menu div#plats div.selectionPlat span.infosPlat p > span:first-child,
-section#menu div#desserts div.selectionPlat span.infosPlat h4,
+section#menu div#desserts div.selectionPlat span.infosPlat p.titrePlat,
 section#menu div#desserts div.selectionPlat span.infosPlat p > span:first-child {
   white-space: nowrap;
   overflow: hidden;
@@ -342,17 +342,18 @@ section#menu div#desserts div.selectionPlat span.infosPlat p > span:first-child 
 }
 
 /* line 148, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat h4,
-section#menu div#plats div.selectionPlat span.infosPlat h4,
-section#menu div#desserts div.selectionPlat span.infosPlat h4 {
+section#menu div#entrees div.selectionPlat span.infosPlat p.titrePlat,
+section#menu div#plats div.selectionPlat span.infosPlat p.titrePlat,
+section#menu div#desserts div.selectionPlat span.infosPlat p.titrePlat {
   margin: 7px 0;
   width: 85%;
+  font-weight: bold;
 }
 
-/* line 153, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p,
-section#menu div#plats div.selectionPlat span.infosPlat p,
-section#menu div#desserts div.selectionPlat span.infosPlat p {
+/* line 154, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat),
+section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat),
+section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) {
   margin: 0;
   color: #707070;
   display: flex;
@@ -360,16 +361,16 @@ section#menu div#desserts div.selectionPlat span.infosPlat p {
   justify-content: space-between;
 }
 
-/* line 160, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p span.tarif,
-section#menu div#plats div.selectionPlat span.infosPlat p span.tarif,
-section#menu div#desserts div.selectionPlat span.infosPlat p span.tarif {
+/* line 161, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif {
   color: #3d3d3d;
   margin-left: 10px;
   width: max-content;
 }
 
-/* line 169, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 170, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat span.animation,
 section#menu div#plats div.selectionPlat span.animation,
 section#menu div#desserts div.selectionPlat span.animation {
@@ -387,7 +388,7 @@ section#menu div#desserts div.selectionPlat span.animation {
   font-size: 1.3em;
 }
 
-/* line 183, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 184, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat span.animation i,
 section#menu div#plats div.selectionPlat span.animation i,
 section#menu div#desserts div.selectionPlat span.animation i {
@@ -395,41 +396,41 @@ section#menu div#desserts div.selectionPlat span.animation i {
   transform: rotate(-360deg);
 }
 
-/* line 190, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 191, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat:hover span.infosPlat,
 section#menu div#plats div.selectionPlat:hover span.infosPlat,
 section#menu div#desserts div.selectionPlat:hover span.infosPlat {
   width: 80%;
 }
 
-/* line 193, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 194, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat:hover span.animation,
 section#menu div#plats div.selectionPlat:hover span.animation,
 section#menu div#desserts div.selectionPlat:hover span.animation {
   width: 20%;
 }
 
-/* line 196, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 197, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat:hover span.animation i,
 section#menu div#plats div.selectionPlat:hover span.animation i,
 section#menu div#desserts div.selectionPlat:hover span.animation i {
   transform: rotate(0deg);
 }
 
-/* line 200, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 201, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu div#entrees div.selectionPlat:hover span.animation:hover,
 section#menu div#plats div.selectionPlat:hover span.animation:hover,
 section#menu div#desserts div.selectionPlat:hover span.animation:hover {
   cursor: pointer;
 }
 
-/* line 208, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 209, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 section#menu a.bigButton {
   padding: 18px 45px;
   margin: 45px auto;
 }
 
-/* line 214, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 215, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 footer {
   display: flex;
   flex-direction: column;
@@ -439,20 +440,20 @@ footer {
   color: white;
 }
 
-/* line 222, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 223, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 footer img {
   width: 130px;
   padding: 25px 25px 25px 0;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-/* line 228, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 229, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 footer a {
   margin-bottom: 15px;
   color: #aeaeae;
 }
 
-/* line 232, ../projet3/Ohmyfood/sass/layout/_layout.scss */
+/* line 233, ../projet3/Ohmyfood/sass/layout/_layout.scss */
 footer a i {
   margin-left: 0;
   color: white;
@@ -640,7 +641,7 @@ main#accueil section#restaurants a.card:hover {
     max-width: 350px;
   }
   /* line 26, ../projet3/Ohmyfood/sass/theme/_responsive.scss */
-  main.menu section#top img {
+  main.menu div#top img {
     height: 35vh;
   }
   /* line 30, ../projet3/Ohmyfood/sass/theme/_responsive.scss */
