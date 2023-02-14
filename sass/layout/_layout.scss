@@ -132,7 +132,7 @@ section#menu {
       display: flex;
       overflow: hidden;
 
-      span.infosPlat {
+      div.infosPlat {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -188,7 +188,7 @@ section#menu {
       }
 
       &:hover{
-        span.infosPlat{
+        div.infosPlat{
           width: 80%;
         }
         span.animation{

@@ -9,9 +9,9 @@ h1, section#menu h2 {
 }
 
 /* line 9, ../projet3/Ohmyfood/sass/base/_base.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
-section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
-section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif, main#accueil section#fonctionnement a.etape p {
+section#menu div#entrees div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#plats div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#desserts div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif, main#accueil section#fonctionnement a.etape p {
   font-weight: 700;
 }
 
@@ -320,9 +320,9 @@ section#menu div#desserts div.selectionPlat {
 }
 
 /* line 135, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat,
-section#menu div#plats div.selectionPlat span.infosPlat,
-section#menu div#desserts div.selectionPlat span.infosPlat {
+section#menu div#entrees div.selectionPlat div.infosPlat,
+section#menu div#plats div.selectionPlat div.infosPlat,
+section#menu div#desserts div.selectionPlat div.infosPlat {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -330,30 +330,30 @@ section#menu div#desserts div.selectionPlat span.infosPlat {
 }
 
 /* line 141, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p.titrePlat,
-section#menu div#entrees div.selectionPlat span.infosPlat p > span:first-child,
-section#menu div#plats div.selectionPlat span.infosPlat p.titrePlat,
-section#menu div#plats div.selectionPlat span.infosPlat p > span:first-child,
-section#menu div#desserts div.selectionPlat span.infosPlat p.titrePlat,
-section#menu div#desserts div.selectionPlat span.infosPlat p > span:first-child {
+section#menu div#entrees div.selectionPlat div.infosPlat p.titrePlat,
+section#menu div#entrees div.selectionPlat div.infosPlat p > span:first-child,
+section#menu div#plats div.selectionPlat div.infosPlat p.titrePlat,
+section#menu div#plats div.selectionPlat div.infosPlat p > span:first-child,
+section#menu div#desserts div.selectionPlat div.infosPlat p.titrePlat,
+section#menu div#desserts div.selectionPlat div.infosPlat p > span:first-child {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /* line 148, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p.titrePlat,
-section#menu div#plats div.selectionPlat span.infosPlat p.titrePlat,
-section#menu div#desserts div.selectionPlat span.infosPlat p.titrePlat {
+section#menu div#entrees div.selectionPlat div.infosPlat p.titrePlat,
+section#menu div#plats div.selectionPlat div.infosPlat p.titrePlat,
+section#menu div#desserts div.selectionPlat div.infosPlat p.titrePlat {
   margin: 7px 0;
   width: 85%;
   font-weight: bold;
 }
 
 /* line 154, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat),
-section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat),
-section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) {
+section#menu div#entrees div.selectionPlat div.infosPlat p:not(.titrePlat),
+section#menu div#plats div.selectionPlat div.infosPlat p:not(.titrePlat),
+section#menu div#desserts div.selectionPlat div.infosPlat p:not(.titrePlat) {
   margin: 0;
   color: #707070;
   display: flex;
@@ -362,9 +362,9 @@ section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) {
 }
 
 /* line 161, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
-section#menu div#plats div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif,
-section#menu div#desserts div.selectionPlat span.infosPlat p:not(.titrePlat) span.tarif {
+section#menu div#entrees div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#plats div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif,
+section#menu div#desserts div.selectionPlat div.infosPlat p:not(.titrePlat) span.tarif {
   color: #3d3d3d;
   margin-left: 10px;
   width: max-content;
@@ -397,9 +397,9 @@ section#menu div#desserts div.selectionPlat span.animation i {
 }
 
 /* line 191, ../projet3/Ohmyfood/sass/layout/_layout.scss */
-section#menu div#entrees div.selectionPlat:hover span.infosPlat,
-section#menu div#plats div.selectionPlat:hover span.infosPlat,
-section#menu div#desserts div.selectionPlat:hover span.infosPlat {
+section#menu div#entrees div.selectionPlat:hover div.infosPlat,
+section#menu div#plats div.selectionPlat:hover div.infosPlat,
+section#menu div#desserts div.selectionPlat:hover div.infosPlat {
   width: 80%;
 }
 
